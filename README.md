@@ -1,3 +1,21 @@
+# ⚠️ THIS SERVICE IS NO LONGER MAINTAINED ⚠️
+
+I maintained this project and kept the webservice running for several years, but it was often difficult, time-consuming, and generally low on my priority list compared to other things like work and family. The final blow was a [Heroku incident](https://status.heroku.com/incidents/2413) in April 2022 in which all of Heroku's GitHub-related secrets were compromised, and Heroku invalidated existing secrets and disabled support for all GitHub-related integrations.
+
+If you're looking for an alternative way of semantically checking your PRs, see the [Alternatives](#alternatives) section in the README below. GitHub Actions are the way to go!
+
+Thanks for your understanding. I wish you luck on your journey to semantic englightenment.
+
+Love,
+[@zeke](https://github.com/zeke)
+
+---
+---
+---
+---
+---
+
+
 # Semantic Pull Requests
 
 > GitHub status check that ensures your pull requests follow the Conventional Commits spec
@@ -126,9 +144,11 @@ allowRevertCommits: true
 
 ## Alternatives
 
-This project is a GitHub App that you can install on one or many repositories, making it a convenient choice if you want to use it on lots of different repos, or even an entire GitHub organization full of repos.
+This project is a GitHub App that you can install on one or many repositories, making it a convenient choice if you want to use it on lots of different repos, or even an entire GitHub organization full of repos. Now that this GitHub App is no longer available, [Semantic PRs](https://github.com/marketplace/semantic-prs) can be used as a drop-in replacement GitHub App.
 
 If, however, you want more control over exactly how and when your pull requests are semantically checked, consider writing your own custom Actions workflow using a GitHub Action like [amannn/action-semantic-pull-request](https://github.com/amannn/action-semantic-pull-request).
+
+See also https://github.com/squash-commit-app/squash-commit-app, a GitHub App which adds an empty commit to an open pull request with a single commit when the title was changed
 
 ## License
 
